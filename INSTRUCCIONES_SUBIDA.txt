@@ -1,0 +1,12 @@
+1. Descomprime portfolio_github_final.zip.
+2. Abre el repositorio vincenzadangelo/portfolio en GitHub.
+3. Pulsa Add file > Upload files.
+4. Arrastra EL CONTENIDO de la carpeta descomprimida: index.html, la carpeta assets, la carpeta es, README.md y .nojekyll.
+   No subas el ZIP como un único archivo.
+5. En el mensaje del commit escribe: Publish bilingual portfolio
+6. Confirma el commit en la rama main.
+7. Ve a Settings > Pages.
+8. En Source selecciona Deploy from a branch.
+9. Selecciona main y / (root), y pulsa Save.
+10. La web principal será: https://vincenzadangelo.github.io/portfolio/
+    La versión española será: https://vincenzadangelo.github.io/portfolio/es/

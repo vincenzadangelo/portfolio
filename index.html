@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Portfolio of Vincenza D'Angelo, UX &amp; Experience Designer in Barcelona. UX Research, Product Design, Customer Experience and Service Design applied to retail, digital products and real services." name="description"/>
+<meta content="2026-07-28" name="last-updated"/>
+<title>Vincenza D'Angelo — UX &amp; Experience Designer</title>
+<link rel="canonical" href="https://vincenzadangelo.github.io/portfolio/"/>
+<link rel="alternate" hreflang="en" href="https://vincenzadangelo.github.io/portfolio/"/>
+<link rel="alternate" hreflang="es" href="https://vincenzadangelo.github.io/portfolio/es/"/>
+<link rel="alternate" hreflang="x-default" href="https://vincenzadangelo.github.io/portfolio/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Vincenza D'Angelo — UX &amp; Experience Designer"/>
+<meta property="og:description" content="UX Research, Product Design, Customer Experience and Service Design applied to retail, digital products and real services."/>
+<meta property="og:url" content="https://vincenzadangelo.github.io/portfolio/"/>
+<meta property="og:image" content="https://vincenzadangelo.github.io/portfolio/assets/skullart_web_responsive.png"/>
+
+<style>
+:root{
+  --paper:#f7f7f3;--white:#fff;--ink:#171915;--muted:#64685f;--line:#dedfd8;
+  --pine:#29483c;--pine-2:#416958;--pine-soft:#e7eee9;--warm:#b78739;
+  --blue:#176ca6;--blue-soft:#eaf4fa;--shadow:0 18px 55px rgba(27,38,31,.10);
+  --sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  --serif:Iowan Old Style,Baskerville,"Times New Roman",serif;
+  --max:1220px;--pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%} a{color:inherit} button{font:inherit}
+.wrap{width:min(var(--max),calc(100% - 2*var(--pad)));margin-inline:auto}
+.section{padding:clamp(72px,10vw,132px) 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pine)}
+h1,h2,h3,p{margin-top:0}
+h1{font-family:var(--serif);font-size:clamp(3.5rem,9vw,7.5rem);line-height:.88;letter-spacing:-.055em;margin-bottom:1.4rem}
+h2{font-family:var(--serif);font-size:clamp(2.2rem,5.5vw,4.8rem);line-height:.98;letter-spacing:-.04em;margin-bottom:1.2rem}
+h3{font-family:var(--serif);font-size:clamp(1.25rem,2.2vw,1.75rem);line-height:1.15;margin-bottom:.65rem}
+.lead{font-family:var(--serif);font-size:clamp(1.18rem,2.4vw,1.65rem);line-height:1.48;color:#343832}
+.body-copy{color:#41453e;max-width:72ch}.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;border:1px solid var(--pine);border-radius:999px;padding:.78rem 1.2rem;text-decoration:none;font-weight:650;font-size:.9rem;transition:.2s}
+.btn.primary{background:var(--pine);color:white}.btn.primary:hover{background:#203a30;transform:translateY(-1px)}
+.btn.secondary{color:var(--pine);background:transparent}.btn.secondary:hover{background:var(--pine-soft)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:.38rem .72rem;font-size:.75rem;color:#474b44}
+.nav{position:sticky;top:0;z-index:100;background:rgba(247,247,243,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(222,223,216,.9)}
+.nav-inner{width:min(var(--max),calc(100% - 2*var(--pad)));margin:auto;height:64px;display:flex;align-items:center;gap:2rem}
+.brand{font-family:var(--serif);font-weight:700;text-decoration:none;white-space:nowrap}.nav-links{margin-left:auto;display:flex;align-items:center;gap:1.35rem}
+.nav-links a{text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.nav-links a:hover{color:var(--pine)}
+.menu-button{display:none;margin-left:auto;border:0;background:none;font-size:1.5rem}
+.hero{min-height:calc(100vh - 64px);display:flex;align-items:center;padding:clamp(54px,8vw,96px) 0}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(40px,6vw,88px);align-items:center}
+.hero-role{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:1rem}
+.hero h1 em{display:block;color:var(--pine);font-weight:500}
+.hero-summary{font-size:clamp(1.05rem,1.7vw,1.3rem);max-width:43rem;color:#363a34}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
+.availability{display:flex;align-items:center;gap:.6rem;margin-top:1.3rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.09em;color:var(--pine);font-weight:700}.availability:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--pine)}
+.hero-collage{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:1fr 1fr;gap:12px;height:min(70vh,650px)}
+.hero-collage figure{margin:0;overflow:hidden;border-radius:18px;background:#ddd;box-shadow:var(--shadow)}.hero-collage figure:first-child{grid-row:1/3}.hero-collage img{width:100%;height:100%;object-fit:cover}
+.section-head{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(36px,8vw,110px);align-items:start;margin-bottom:clamp(40px,7vw,82px)}
+.pillars,.scope-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.pillar,.scope-card{background:white;border:1px solid var(--line);border-top:3px solid var(--pine);padding:1.35rem;min-height:190px}.pillar .num,.scope-card .num{font-size:.72rem;letter-spacing:.1em;color:var(--pine);font-weight:800}.pillar p,.scope-card p{font-size:.88rem;color:#50544d;margin-bottom:0}
+.timeline{position:relative;margin-top:2rem;padding-left:30px}.timeline:before{content:"";position:absolute;left:6px;top:9px;bottom:9px;width:2px;background:var(--pine)}
+.timeline-item{position:relative;padding:0 0 2.5rem 1rem}.timeline-item:before{content:"";position:absolute;left:-30px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--pine)}.timeline-item:last-child{padding-bottom:0}
+.timeline-date{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}.timeline-item p{max-width:75ch;color:#484c45}
+.company-intro{padding:clamp(82px,11vw,150px) 0;border-top:1px solid var(--line);background:var(--pine);color:#fff}.company-intro .eyebrow{color:#b2c7bd}.company-intro h2,.company-intro p{color:#fff}.company-intro-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(40px,8vw,110px);align-items:end}.company-intro .lead{color:#fff}.company-kicker{font-family:var(--serif);font-size:clamp(4rem,10vw,8rem);line-height:.8;color:#789587;opacity:.55}
+.case{padding:clamp(78px,10vw,140px) 0;border-top:1px solid var(--line)}.case.alt{background:#f0f1ec}
+.case-title{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(35px,7vw,90px);align-items:end;margin-bottom:3rem}
+.case-number{font-family:var(--serif);font-size:clamp(4rem,9vw,8rem);line-height:.7;color:#d7ddd8;letter-spacing:-.06em}
+.case-intro{font-size:1.08rem;color:#3e423c;max-width:70ch}
+.case-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:2rem 0 3.3rem}.meta-box{background:white;padding:1.15rem}.meta-box b{display:block;color:var(--pine);font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:.4rem}.meta-box span{display:block;font-size:.88rem;line-height:1.45;color:#484c45}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.story-card{background:white;border:1px solid var(--line);overflow:hidden}.story-card button{border:0;padding:0;background:none;width:100%;cursor:zoom-in}.story-card img{width:100%;aspect-ratio:4/3;object-fit:cover}.story-copy{padding:1.15rem}.story-copy .tag,.other .tag{font-size:.68rem;color:var(--pine);font-weight:800;text-transform:uppercase;letter-spacing:.08em}.story-copy p{font-size:.88rem;color:#4a4e47;margin:0}
+.subhead{display:flex;align-items:end;justify-content:space-between;gap:2rem;margin:clamp(54px,8vw,95px) 0 1.5rem}.subhead h3{font-size:clamp(1.7rem,3.2vw,2.8rem);margin:0}.subhead p{max-width:58ch;margin:0;color:#555950}
+.phone-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem;align-items:start}.phone-card{min-width:0;margin:0}.phone-shell{padding:6px;border-radius:20px;background:#111;box-shadow:0 12px 26px rgba(16,24,19,.14)}.phone-shell button{border:0;background:#fff;border-radius:15px;overflow:hidden;padding:0;width:100%;cursor:zoom-in}.phone-shell img{width:100%;aspect-ratio:360/745;object-fit:cover;object-position:top}.phone-card figcaption{text-align:center;font-size:.75rem;color:var(--muted);margin-top:.65rem}
+.desktop-showcase{display:grid;grid-template-columns:1.55fr .9fr;gap:1rem}.desktop-stack{display:grid;grid-template-rows:1fr 1fr;gap:1rem}.media{background:white;border:1px solid var(--line);padding:8px;box-shadow:0 10px 32px rgba(29,42,33,.06)}.media button{display:block;border:0;background:white;padding:0;width:100%;cursor:zoom-in}.media img{width:100%;height:100%;object-fit:contain}.media-caption{padding:.9rem 1rem 1rem;border-top:1px solid var(--line);background:#fff}.media-caption b{display:block;font-family:var(--serif);font-size:1rem;margin-bottom:.25rem}.media-caption span{display:block;font-size:.78rem;line-height:1.5;color:var(--muted)}.desktop-main{min-height:480px}.desktop-main img{aspect-ratio:1440/916;object-fit:contain}.desktop-stack .media img{aspect-ratio:1440/920;object-fit:contain}
+.insight-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.3rem}.insight{border-left:3px solid var(--pine);background:white;padding:1.15rem}.insight b{display:block;font-family:var(--serif);font-size:1.05rem;margin-bottom:.35rem}.insight span{font-size:.82rem;color:#51554e}
+.research-board{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;align-items:stretch}.research-board .media:first-child{min-height:500px}.research-board .media img{height:100%;object-fit:contain}.research-pair{display:grid;grid-template-rows:1fr 1fr;gap:1rem}
+.journey-board{display:grid;grid-template-columns:1.25fr .75fr;gap:1rem}.journey-board .media img{object-fit:contain;height:100%}.journey-board .media:first-child{min-height:470px}.journey-side{display:grid;grid-template-rows:1fr 1fr;gap:1rem}
+.system-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.system-grid .media{padding:6px}.system-grid .media img{aspect-ratio:3/4;object-fit:contain}.system-grid .wide{grid-column:span 2}.system-grid .wide img{aspect-ratio:2/1.3}
+.skullart-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:1rem;align-items:stretch}.skullart-grid .media img{height:100%;object-fit:contain}.skullart-grid .media:first-child{min-height:500px}.skullart-side{display:grid;grid-template-rows:1fr 1fr;gap:1rem}.skullart-side .photo img{object-fit:cover}
+.touchpoints{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.touchpoint{background:#fff;padding:1.2rem;min-height:180px}.touchpoint .step{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--pine);font-weight:800}.touchpoint h3{font-size:1.15rem;margin:.5rem 0}.touchpoint p{font-size:.82rem;color:#52564f;margin:0}
+.other-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.other{background:white;border:1px solid var(--line);padding:1.35rem}.other p{font-size:.87rem;color:#50544d;margin-bottom:0}
+.contact{background:var(--pine);color:white;padding:clamp(75px,10vw,125px) 0}.contact h2,.contact p{color:white}.contact .eyebrow{color:#a8c0b5}.contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(50px,9vw,120px);align-items:end}.contact-links{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.2)}.contact-link{background:var(--pine);padding:1.15rem;text-decoration:none}.contact-link small{display:block;text-transform:uppercase;letter-spacing:.1em;color:#a8c0b5;font-size:.66rem}.contact-link strong{display:block;margin-top:.25rem;font-size:.92rem;word-break:break-word}.contact-link:hover{background:#335547}
+.footer{padding:1.1rem 0;background:var(--pine);border-top:1px solid rgba(255,255,255,.15);color:#a8c0b5;font-size:.7rem;letter-spacing:.09em;text-transform:uppercase}.footer-inner{display:flex;justify-content:space-between;gap:2rem}
+.lightbox{position:fixed;inset:0;z-index:500;background:rgba(10,13,11,.92);display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{max-width:min(1500px,94vw);max-height:91vh;object-fit:contain;background:white;box-shadow:0 20px 80px rgba(0,0,0,.45)}.lightbox-close{position:absolute;top:18px;right:22px;border:1px solid rgba(255,255,255,.6);background:rgba(0,0,0,.2);color:white;width:42px;height:42px;border-radius:50%;font-size:1.4rem;cursor:pointer}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:980px){
+ .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--paper);padding:1rem var(--pad);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-button{display:block}
+ .hero-grid,.section-head,.case-title,.contact-grid,.company-intro-grid{grid-template-columns:1fr}.hero{min-height:auto}.hero-collage{height:540px}.section-head{gap:1.5rem}
+ .pillars,.scope-grid,.case-meta,.insight-grid,.touchpoints{grid-template-columns:repeat(2,1fr)}
+ .story-grid{grid-template-columns:1fr 1fr}.phone-strip{grid-template-columns:repeat(3,1fr)}
+ .desktop-showcase,.research-board,.journey-board,.skullart-grid{grid-template-columns:1fr}.desktop-stack,.research-pair,.journey-side,.skullart-side{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .system-grid{grid-template-columns:repeat(2,1fr)}.other-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+ body{font-size:15px}.hero-collage{height:420px;grid-template-columns:1fr 1fr}
+ .pillars,.scope-grid,.case-meta,.insight-grid,.story-grid,.other-grid,.contact-links,.touchpoints{grid-template-columns:1fr}
+ .phone-strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem}.phone-card{flex:0 0 72%;scroll-snap-align:center}
+ .desktop-stack,.research-pair,.journey-side,.skullart-side{grid-template-columns:1fr}.system-grid{grid-template-columns:1fr}.system-grid .wide{grid-column:auto}
+ .case-number{font-size:5rem}.footer-inner{flex-direction:column;gap:.25rem}.subhead{align-items:flex-start;flex-direction:column}
+}
+@media print{.nav,.hero-actions,.lightbox{display:none!important}body{background:white}.section,.case,.contact{break-inside:avoid}.reveal{opacity:1;transform:none}.media,.story-card,.phone-shell{box-shadow:none}}
+
+.profile-quote{font-family:var(--serif);font-size:clamp(1.12rem,2.2vw,1.45rem);line-height:1.45;color:var(--pine);margin:1.5rem 0 0;max-width:44rem}
+.profile-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:2rem 0 1.4rem}
+.profile-fact{background:#fff;padding:1.1rem}.profile-fact small{display:block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}.profile-fact strong{display:block;margin-top:.35rem;font-size:.92rem;color:var(--ink)}
+.method-section{background:#eef1ec}.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.method-card{background:#fff;border:1px solid var(--line);padding:1.25rem;min-height:175px}.method-card span{font-size:.68rem;letter-spacing:.12em;color:var(--pine);font-weight:800}.method-card h3{margin-top:2rem}.method-card p{font-size:.84rem;color:#50544d;margin-bottom:0}
+.case-detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.case-detail-card{background:#fff;border:1px solid var(--line);padding:1.35rem}.case-detail-card .tag{font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--pine);font-weight:800}.case-detail-card h3{font-size:1.35rem;margin-top:.65rem}.case-detail-card p{font-size:.88rem;color:#4d514a}.deliverables{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}.deliverables span{border:1px solid var(--line);border-radius:999px;padding:.3rem .6rem;font-size:.68rem;color:#555950;background:var(--paper)}
+.impact-panel{margin-top:1rem;background:var(--pine);color:white;padding:clamp(28px,5vw,52px);display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(30px,6vw,80px);align-items:start}.impact-panel .eyebrow{color:#a8c0b5}.impact-panel h3{font-size:clamp(1.65rem,3vw,2.5rem);color:white;margin-top:.55rem}.impact-panel ul{columns:2;column-gap:2.5rem;margin:0;padding-left:1.1rem}.impact-panel li{break-inside:avoid;color:#eef4f0;margin:.55rem 0;font-size:.88rem}
+.skills-matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,48px)}.skill-group{border-top:3px solid var(--pine);padding-top:1rem}.skill-group h3{font-size:1.3rem}.skill-group ul{list-style:none;margin:1rem 0 0;padding:0}.skill-group li{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-top:1px solid var(--line);font-size:.84rem}.skill-group li span{font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}.skills-chips{margin-top:2.2rem}.contact-wide{grid-column:1/-1}
+@media(max-width:980px){.profile-facts,.method-grid{grid-template-columns:repeat(2,1fr)}.case-detail-grid,.skills-matrix{grid-template-columns:repeat(2,1fr)}.impact-panel{grid-template-columns:1fr}}
+@media(max-width:640px){.profile-facts,.method-grid,.case-detail-grid,.skills-matrix{grid-template-columns:1fr}.impact-panel ul{columns:1}.contact-wide{grid-column:auto}}
+
+/* Visual case-study boards added 2026-07-28 */
+.visual-board{margin:1.35rem 0 2.4rem;background:#fff;border:1px solid var(--line);padding:10px;box-shadow:0 16px 44px rgba(27,38,31,.08)}
+.visual-board button,.visual-card button{display:block;width:100%;padding:0;border:0;background:#fff;cursor:zoom-in}
+.visual-board img{width:100%;height:auto;object-fit:contain}
+.visual-caption{padding:.9rem 1rem .35rem}.visual-caption b{display:block;font-family:var(--serif);font-size:1.05rem}.visual-caption span{display:block;margin-top:.25rem;font-size:.8rem;color:var(--muted)}
+.portfolio-visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.4rem 0 3rem}.visual-card{background:#fff;border:1px solid var(--line);padding:8px;box-shadow:0 12px 34px rgba(27,38,31,.07)}.visual-card.wide{grid-column:1/-1}.visual-card img{width:100%;height:auto;object-fit:contain}.visual-card .media-caption{border-top:1px solid var(--line)}
+.skullart-main-stack{display:grid;grid-template-rows:1fr 1fr;gap:1rem}
+@media(max-width:980px){.skullart-main-stack{grid-template-columns:1fr 1fr;grid-template-rows:auto}.portfolio-visual-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.skullart-main-stack{grid-template-columns:1fr}.visual-card.wide{grid-column:auto}}
+
+.lang-switch{border:1px solid var(--pine)!important;border-radius:999px;padding:.28rem .58rem!important;color:var(--pine)!important;line-height:1}
+.lang-switch:hover{background:var(--pine)!important;color:#fff!important}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="nav-inner">
+<a class="brand" href="#inicio">Vincenza D'Angelo</a>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-button">☰</button>
+<div class="nav-links"><a href="#perfil">Profile</a><a href="#experiencia">Experience</a><a href="#metodo">Approach</a><a href="#desigual">Desigual</a><a href="#skullart">SkullartDesign</a><a href="#skills">Skills</a><a href="#contacto">Contact</a><a class="lang-switch" href="es/" lang="es" hreflang="es" aria-label="Ver versión en español">ES</a></div>
+</div>
+</nav>
+<header class="hero" id="inicio">
+<div class="wrap hero-grid">
+<div class="reveal">
+<div class="eyebrow">UX &amp; Experience Designer · Barcelona</div>
+<h1>Vincenza <em>D'Angelo</em></h1>
+<div class="hero-role">UX Research · Product Design · Customer Experience · Service Design</div>
+<p class="hero-summary">I connect <strong>people, business and design</strong> to turn complex problems into clear, useful and coherent experiences. I spent seven years at Desigual and now apply an end-to-end design and business perspective as co-founder of <strong>SkullartDesign</strong>.</p>
+<div class="hero-actions"><a class="btn primary" href="#desigual">View projects</a><a class="btn secondary" href="mailto:dangelocinzia@gmail.com">Get in touch</a></div>
+<div class="availability">Open to opportunities · part-time or freelance projects · on-site, hybrid or remote</div>
+</div>
+<div class="hero-collage reveal">
+<figure><img alt="Workspace with prototypes, RFID reader and label printer" src="assets/desigual_rfid_workbench.webp"/></figure>
+<figure><img alt="Co-creation session with users of an internal Desigual application" src="assets/desigual_cocreacion.webp"/></figure>
+<figure><img alt="Research synthesis for the SkullartDesign customer journey" src="assets/skullart_synthesis.webp"/></figure>
+</div>
+</div>
+</header>
+<section class="section" id="perfil">
+<div class="wrap">
+<div class="section-head reveal">
+<div><div class="eyebrow">Profile</div><h2>UX that connects people, product and business.</h2></div>
+<div><p class="lead">I do more than design screens. I research, structure information, identify opportunities and connect people’s experience with real business goals.</p><p class="body-copy">My career began in graphic design, evolved into front-end and UX/UI, and expanded into Experience Design, Service Design and Customer Experience. This combination allows me to move naturally between strategy and execution.</p><p class="profile-quote">“To me, UX is how a person experiences the entire process with you, not only what happens on a screen.”</p></div>
+</div>
+<div class="profile-facts reveal">
+<div class="profile-fact"><small>Experience</small><strong>10+ years in design</strong></div>
+<div class="profile-fact"><small>Digital product</small><strong>B2C · B2B · Retail</strong></div>
+<div class="profile-fact"><small>Own business</small><strong>SkullartDesign</strong></div>
+<div class="profile-fact"><small>Focus</small><strong>People + business</strong></div>
+</div><div class="pillars reveal">
+<article class="pillar"><span class="num">01</span><h3>UX Research</h3><p>Interviews, observation, user sessions, synthesis, journey maps and insight identification.</p></article>
+<article class="pillar"><span class="num">02</span><h3>Product Design</h3><p>Information architecture, user flows, wireframes, prototypes and interfaces for real products.</p></article>
+<article class="pillar"><span class="num">03</span><h3>Customer Experience</h3><p>End-to-end design of touchpoints, funnels, and digital and in-person journeys.</p></article>
+<article class="pillar"><span class="num">04</span><h3>Facilitation</h3><p>Sessions with users and teams to make findings visible, prioritise needs and define solutions.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="experiencia">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="eyebrow">Experience</div><h2>An evolution, not a change of direction.</h2></div><p class="body-copy">My career connects visual design, technology, digital product and customer experience. Each stage expanded on the previous one and gave me a more complete view of design.</p></div>
+<div class="timeline reveal">
+<article class="timeline-item">
+<div class="timeline-date">Present</div>
+<h3>Co-founder &amp; Experience Designer · SkullartDesign</h3>
+<p>Brand and experience direction, website and WooCommerce, content strategy, customer journey, quoting, CRM, pricing, workshops, in-person experiences and AI applied to real business processes.</p>
+</article>
+<article class="timeline-item">
+<div class="timeline-date">2015 — 2022</div>
+<h3>UX / UI Designer · Desigual</h3>
+<p>Product design for B2C, B2B, retail and internal tools: user research, Design Thinking, journey and empathy maps, flows, prototypes, dashboards and transactional communications.</p>
+</article>
+<article class="timeline-item">
+<div class="timeline-date">Earlier experience</div>
+<h3>Graphic Design &amp; Front-end · Freelance and personal projects</h3>
+<p>Visual identity, editorial design, web layout, HTML and CSS: the visual and technical foundation from which I evolved into UX and digital product design.</p>
+</article></div>
+</div>
+</section>
+<section class="section method-section" id="metodo">
+<div class="wrap">
+<div class="section-head reveal">
+<div><div class="eyebrow">How I work</div><h2>From understanding to optimisation.</h2></div>
+<div><p class="lead">I do not start with the screen. I start by understanding the problem and the business.</p><p class="body-copy">I design, validate with real people and do not consider a solution finished until I understand what works. To me, design is a cycle, not a one-off delivery.</p></div>
+</div>
+<div class="method-grid reveal">
+<article class="method-card"><span>01</span><h3>Research</h3><p>Listen, observe and gather context before making decisions.</p></article>
+<article class="method-card"><span>02</span><h3>Understand the business</h3><p>Align design with real goals, processes and constraints.</p></article>
+<article class="method-card"><span>03</span><h3>Design</h3><p>Translate the problem into flows, structure, content and interface.</p></article>
+<article class="method-card"><span>04</span><h3>Validate</h3><p>Test with real people before investing in development.</p></article>
+<article class="method-card"><span>05</span><h3>Iterate</h3><p>Refine based on what we learn; the first attempt is never the last.</p></article>
+<article class="method-card"><span>06</span><h3>Measure</h3><p>Use data to verify whether the solution solved the problem.</p></article>
+<article class="method-card"><span>07</span><h3>Optimise</h3><p>Continuously refine the experience and the product.</p></article>
+</div>
+</div>
+</section><section class="company-intro" id="desigual">
+<div class="wrap company-intro-grid reveal">
+<div><div class="eyebrow">Stage 01 · Desigual</div><div class="company-kicker">2015—22</div></div>
+<div><h2>UX applied to a retail ecosystem.</h2><p class="lead">My work was not limited to a single application. I contributed to projects across different departments, channels and user groups.</p><p>The focus was on understanding real processes and translating them into useful digital products: B2C experiences, B2B tools, data visualisation and internal solutions for store teams.</p></div>
+</div>
+</section>
+<section class="section">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="eyebrow">Scope of work</div><h2>A cross-functional practice.</h2></div><p class="body-copy">These areas summarise the type of work I carried out at Desigual. The visual case studies that follow are examples within this ecosystem, not separate companies or roles.</p></div>
+<div class="scope-grid reveal">
+<article class="scope-card"><span class="num">01</span><h3>B2C &amp; e-commerce</h3><p>Checkout, returns, loyalty, order states and transactional emails across the purchase and post-purchase journey.</p></article>
+<article class="scope-card"><span class="num">02</span><h3>B2B &amp; data visualisation</h3><p>Dashboards and tools for viewing orders, purchases, sales and decision-support information.</p></article>
+<article class="scope-card"><span class="num">03</span><h3>Internal tools</h3><p>RFID / Stock Optimizer, Sofía, PriceTag, AskMe and Assisted Shopping to support real in-store tasks.</p></article>
+<article class="scope-card"><span class="num">04</span><h3>Research &amp; facilitation</h3><p>Interviews, journey maps, insight synthesis, user sessions and collaboration with multidisciplinary teams.</p></article>
+</div>
+</div>
+</section>
+<section class="case alt" id="retail-tools">
+<div class="wrap">
+<div class="case-title reveal"><div><div class="case-number">01</div><div class="eyebrow">Desigual · Internal tools</div></div><div><h2>Tools for store operations</h2><p class="case-intro">Design of mobile and back-office solutions for managing products, display, stock, labelling and operational information in a retail environment.</p></div></div>
+<div class="case-meta reveal">
+<div class="meta-box"><b>Users</b><span>Store teams and roles responsible for product and operations.</span></div>
+<div class="meta-box"><b>Projects</b><span>RFID / Stock Optimizer, Sofía and PriceTag.</span></div>
+<div class="meta-box"><b>Complexity</b><span>Integration of digital tasks, hardware, stock and the physical store environment.</span></div>
+<div class="meta-box"><b>My contribution</b><span>Flows, wireframes, prototypes, UI, state reviews and collaboration with product and technology teams.</span></div>
+</div>
+<div class="subhead reveal"><h3>The process in a real-world context</h3><p>The design process combined end-to-end flows, physical devices and sessions with the people who would use the solution.</p></div>
+<div class="story-grid reveal">
+<article class="story-card"><button class="zoom"><img alt="Printed flows for an internal application organised on a wall" src="assets/desigual_flows_wall.webp"/></button><div class="story-copy"><div class="tag">Flows and architecture</div><h3>See the complete system</h3><p>Reviewing journeys, screens, states and dependencies using printed materials and annotations.</p></div></article>
+<article class="story-card"><button class="zoom"><img alt="Workspace with prototypes, RFID reader and label printer" src="assets/desigual_rfid_workbench.webp"/></button><div class="story-copy"><div class="tag">Prototyping in context</div><h3>Connecting digital and physical</h3><p>Designing alongside the real devices used in store: reader, scanner and label printer.</p></div></article>
+<article class="story-card"><button class="zoom"><img alt="Vincenza facilitating a session with users of an internal Desigual application" src="assets/desigual_cocreacion.webp"/></button><div class="story-copy"><div class="tag">Facilitation and co-creation</div><h3>From findings to priorities</h3><p>I prepared and facilitated a session with the people using the application to present findings, highlight key issues and prioritise the features to be included.</p></div></article>
+</div>
+<div class="subhead reveal"><h3>RFID / PriceTag · Store Operations</h3><p>A complete view of the mobile flow: store selection, synchronisation, printer connection, label printing and price lookup.</p></div>
+<div class="visual-board reveal"><button class="zoom"><img alt="Store Operations · end-to-end flow" src="assets/desigual_rfid_case.png"/></button><div class="visual-caption"><b>Store Operations · end-to-end flow</b><span>A consolidated visual case study showing the system, its components and its operational impact.</span></div></div>
+<div class="subhead reveal"><h3>Sofía / Stock Optimizer · Backoffice</h3><p>A second layer for managing hierarchies, states, product depth, filters, detail and traceability from desktop.</p></div>
+<div class="desktop-showcase reveal">
+<div class="media desktop-main"><button class="zoom"><img alt="Back-office with hierarchical list and product detail" src="assets/backoffice_main.webp"/></button></div>
+<div class="desktop-stack"><div class="media"><button class="zoom"><img alt="Filtered report of products not on display" src="assets/backoffice_filters.webp"/></button></div><div class="media"><button class="zoom"><img alt="Traceability modal showing employee name and reason" src="assets/backoffice_trace.webp"/></button></div></div>
+</div>
+</div>
+</section>
+<section class="case" id="askme">
+<div class="wrap">
+<div class="case-title reveal"><div><div class="case-number">02</div><div class="eyebrow">Desigual · Research &amp; Product Design</div></div><div><h2>AskMe → Assisted Shopping</h2><p class="case-intro">AskMe was an internal Desigual tool. Research helped us understand how it was used in store, identify friction points and turn the findings into the product’s next evolution: Assisted Shopping.</p></div></div>
+<div class="case-meta reveal">
+<div class="meta-box"><b>Context</b><span>A tool used by store teams to support customer service.</span></div>
+<div class="meta-box"><b>Research</b><span>Interviews, observations, device comparison, pain points and gain points.</span></div>
+<div class="meta-box"><b>Synthesis</b><span>Journey mapping, clustering of friction points, ideas, needs and prioritised opportunities.</span></div>
+<div class="meta-box"><b>Evolution</b><span>From the analysis of AskMe to the patterns and components of Assisted Shopping.</span></div>
+</div>
+<div class="subhead reveal"><h3>Understanding what worked and what slowed people down</h3><p>The study combined positive feedback, operational issues and a direct comparison between tablet and mobile.</p></div>
+<div class="visual-board reveal"><button class="zoom"><img alt="AskMe · complete UX study" src="assets/desigual_askme_case.png"/></button><div class="visual-caption"><b>AskMe · complete UX study</b><span>Research, journey mapping, device comparison, friction points, improvements and ideas in one view.</span></div></div>
+<div class="insight-grid reveal">
+<div class="insight"><b>Preference for mobile</b><span>More manageable, familiar and easier to integrate into everyday work.</span></div>
+<div class="insight"><b>Technical friction</b><span>Wi-Fi, passwords and expired sessions could interrupt tasks.</span></div>
+<div class="insight"><b>Incomplete tracking</b><span>Delivery, returns and status information needed greater clarity.</span></div>
+<div class="insight"><b>Actionable information</b><span>Stock, availability, filters and out-of-season products.</span></div>
+</div>
+<div class="subhead reveal"><h3>Assisted Shopping: turning learning into a system</h3><p>We applied Design Thinking techniques to translate findings from real-world use into a clearer experience and reusable interface patterns.</p></div>
+<div class="visual-board reveal"><button class="zoom"><img alt="Assisted Shopping · UX/UI and visual system" src="assets/desigual_assisted_case.png"/></button><div class="visual-caption"><b>Assisted Shopping · UX/UI and visual system</b><span>Evolution from research to reusable patterns, components, states, modals and the size-selection experience.</span></div></div>
+</div>
+</section>
+<section class="section alt">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="eyebrow">More work at Desigual</div><h2>B2C, B2B and communication.</h2></div><p class="body-copy">The previous cases show the projects with the strongest visual material available. My experience also covered other parts of the digital ecosystem.</p></div>
+<div class="other-grid reveal">
+<article class="other"><div class="tag">B2B · Data</div><h3>Dashboards and visualisation</h3><p>Interfaces for visualising purchases, sales, orders and data relevant to decision-making.</p></article>
+<article class="other"><div class="tag">B2C · E-commerce</div><h3>Checkout and returns</h3><p>Purchase and post-purchase flows, states, errors and return processes.</p></article>
+<article class="other"><div class="tag">Loyalty</div><h3>Loyalty and account</h3><p>Experiences related to customers, points, history and their relationship with the brand.</p></article>
+<article class="other"><div class="tag">Transactional communication</div><h3>Emails and status updates</h3><p>Design of communications related to orders, confirmations, changes and tracking.</p></article>
+<article class="other"><div class="tag">Retail</div><h3>Order visibility and management</h3><p>Tools for viewing and managing useful information during in-store work.</p></article>
+<article class="other"><div class="tag">Cross-functional work</div><h3>Product, business and technology</h3><p>Collaboration across departments to translate operational needs into requirements and solutions.</p></article>
+</div>
+</div>
+</section>
+<section class="company-intro" id="skullart">
+<div class="wrap company-intro-grid reveal">
+<div><div class="eyebrow">Stage 02 · SkullartDesign</div><div class="company-kicker">Today</div></div>
+<div><h2>UX applied across the entire service.</h2><p class="lead">At SkullartDesign, I do not simply design a website. I design how customers experience the entire process.</p><p>From brand discovery to after-sales, I have analysed the journey, designed processes and implemented improvements across digital, commercial, operational and in-person touchpoints.</p></div>
+</div>
+</section>
+<section class="case alt">
+<div class="wrap">
+<div class="case-title reveal"><div><div class="case-number">03</div><div class="eyebrow">SkullartDesign · Customer Experience &amp; Service Design</div></div><div><h2>Customer journey for a real business</h2><p class="case-intro">Design of the complete journey for customers looking for a custom table or piece of furniture: a personalised, considered purchase connected to an artisanal process.</p></div></div>
+<div class="case-meta reveal">
+<div class="meta-box"><b>Research</b><span>Conversations, enquiries, quotes, frequently asked questions and observation of the real process.</span></div>
+<div class="meta-box"><b>Deliverables</b><span>Research synthesis, Customer Journey Map, Service Blueprint, insights and improvement priorities.</span></div>
+<div class="meta-box"><b>Areas of intervention</b><span>Website, funnel, consultation, quoting, CRM, pricing, production, delivery, experiences and after-sales.</span></div>
+<div class="meta-box"><b>My role</b><span>Co-founder responsible for experience, website, communication, commercial processes and customer relationships.</span></div>
+</div>
+<div class="skullart-grid reveal"><div class="skullart-main-stack"><div class="media"><button class="zoom"><img alt="SkullartDesign research synthesis" src="assets/skullart_synthesis.webp"/></button></div><div class="media"><button class="zoom"><img alt="SkullartDesign emotional map" src="assets/Skullart_Mapa_Emocional.png"/></button></div></div><div class="skullart-side"><div class="media"><button class="zoom"><img alt="SkullartDesign Customer Journey Map" src="assets/skullart_journey.webp"/></button></div><div class="media photo"><button class="zoom"><img alt="Vincenza during a public presentation of SkullartDesign" src="assets/skullart_presentacion.webp"/></button><div class="media-caption"><b>Public presentation of SkullartDesign</b><span>Brand narrative, artisanal process and value proposition.</span></div></div></div></div><div class="subhead reveal"><h3>From strategy to digital product and internal systems</h3><p>The experience comes to life through the website, product pages and the tools used to quote, track customers and make decisions.</p></div><div class="portfolio-visual-grid"><div class="visual-card wide reveal"><button class="zoom"><img alt="Responsive SkullartDesign website" src="assets/skullart_web_responsive.png"/></button><div class="media-caption"><b>Responsive SkullartDesign website</b><span>Adaptation of the architecture, content and shopping experience across desktop, tablet and mobile.</span></div></div><div class="visual-card reveal"><button class="zoom"><img alt="Product page · custom table" src="assets/skullart_product_premium.png"/></button><div class="media-caption"><b>Product page · custom table</b><span>Premium storytelling, variants, key information and calls to action within an artisanal product experience.</span></div></div><div class="visual-card reveal"><button class="zoom"><img alt="Pricing, CRM and business visualisation" src="assets/skullart_crm_dashboard.png"/></button><div class="media-caption"><b>Pricing, CRM and business visualisation</b><span>From quote calculations to pipeline, margins, customers and monthly planning.</span></div></div></div>
+<div class="subhead reveal"><h3>The designed journey</h3><p>The journey connected every touchpoint and helped us design a coherent experience, not just an interface.</p></div>
+<div class="touchpoints reveal">
+<article class="touchpoint"><span class="step">01 · Discovery</span><h3>Find and understand</h3><p>The website, search engines, social media and recommendations must clearly explain what we do and why it is different.</p></article>
+<article class="touchpoint"><span class="step">02 · First contact</span><h3>Reduce uncertainty</h3><p>Email, forms, WhatsApp or phone calls capture the initial idea and make it easy for customers to share context and images.</p></article>
+<article class="touchpoint"><span class="step">03 · Consultation</span><h3>Help customers visualise</h3><p>References, materials, dimensions and examples turn an abstract idea into a possible solution.</p></article>
+<article class="touchpoint"><span class="step">04 · Quote</span><h3>Make the proposal tangible</h3><p>A quote does not end the conversation: it structures options, decisions and expectations.</p></article>
+<article class="touchpoint"><span class="step">05 · Follow-up</span><h3>Support the decision process</h3><p>Answering questions and maintaining continuity during a decision that is often shared and takes time.</p></article>
+<article class="touchpoint"><span class="step">06 · Confirmation</span><h3>Begin the service</h3><p>Terms, payments, timelines and personalisation mark the beginning of the artisanal process.</p></article>
+<article class="touchpoint"><span class="step">07 · Production and delivery</span><h3>Maintain trust</h3><p>Coordination, progress updates, logistics and installation all contribute to perceived value.</p></article>
+<article class="touchpoint"><span class="step">08 · After-sales</span><h3>Close the journey well</h3><p>Follow-up, care guidance and issue resolution extend the experience beyond delivery.</p></article>
+</div>
+<div class="subhead reveal"><h3>Improvements applied to key touchpoints</h3><p>The UX methodology translated into concrete decisions across the website, sales process and customer relationship.</p></div>
+<div class="other-grid reveal">
+<article class="other"><div class="tag">Website · Architecture</div><h3>From template to distinctive experience</h3><p>Complete transformation of a generic website into an artisanal product experience, with its own structure, content, product pages and contact journeys.</p></article>
+<article class="other"><div class="tag">Funnel · Contact</div><h3>From interest to conversation</h3><p>Organisation of calls to action, forms and messages to make it easier to request information and a quote.</p></article>
+<article class="other"><div class="tag">Consultation</div><h3>Make the idea tangible</h3><p>Use of references, examples, photographs and explanations to help customers imagine the result.</p></article>
+<article class="other"><div class="tag">Quote</div><h3>A personalised proposal</h3><p>Information structure that clarifies materials, dimensions, finishes, price, timing and next steps.</p></article>
+<article class="other"><div class="tag">Follow-up · Service</div><h3>Continuity across stages</h3><p>Communication during consideration, production, delivery and after-sales to avoid breaks in the experience.</p></article>
+<article class="other"><div class="tag">Internal processes</div><h3>Pricing and CRM</h3><p>Organisation of quotes, customers, statuses and follow-up to support a more coherent experience.</p></article>
+</div>
+<div class="subhead reveal"><h3>Three connected areas of work</h3><p>The customer experience depends on the website, internal processes and what happens in person.</p></div>
+<div class="case-detail-grid reveal">
+<article class="case-detail-card">
+<div class="tag">Digital product · Conversion</div>
+<h3>Website, WooCommerce and quote funnel</h3>
+<p>Starting from a template, I completely adapted the website to an artisanal, made-to-measure product business. I organised the architecture, product pages, messaging, calls to action, forms and content to help customers understand options, compare and request a quote with confidence.</p>
+<div class="deliverables"><span>Information architecture</span><span>UX Writing</span><span>WooCommerce</span><span>SEO</span><span>Conversion</span></div>
+</article>
+<article class="case-detail-card">
+<div class="tag">Operations · Data</div>
+<h3>CRM, pricing and business visualisation</h3>
+<p>I designed internal tools to turn scattered data into a manageable flow: price, margin and material calculations; quote generation; customer and project management; and tracking of pipeline, production, deliveries and payments.</p>
+<div class="deliverables"><span>Service Blueprint</span><span>CRM</span><span>Pricing Engine</span><span>Dashboards</span><span>Automation</span></div>
+</article>
+<article class="case-detail-card">
+<div class="tag">Brand Experience · Facilitation</div>
+<h3>“Create Your Own Board”</h3>
+<p>I created a hands-on customer experience by designing the complete journey: concept and communication, purchase and booking, preparation, welcome at the workshop, in-person activity, materials, facilitation and closing.</p>
+<p>The aim was for every touchpoint, from the purchase decision to making the piece in person, to feel simple, warm and consistent with SkullartDesign.</p>
+<div class="deliverables"><span>Concept</span><span>Purchase and booking</span><span>Communication</span><span>Facilitation</span><span>Brand Experience</span></div>
+</article>
+</div>
+<div class="impact-panel reveal">
+<div><div class="eyebrow">Results and impact</div><h3>Design applied to a real operating business.</h3></div>
+<ul>
+<li>More than 100 custom projects managed.</li>
+<li>A more structured sales and quoting process.</li>
+<li>Centralised customer information and follow-up.</li>
+<li>Greater customer autonomy before the first contact.</li>
+<li>A coherent experience from the website through to after-sales.</li>
+<li>Decisions supported by data and custom-built tools.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="section" id="skills">
+<div class="wrap">
+<div class="section-head reveal">
+<div><div class="eyebrow">Skills &amp; tools</div><h2>How I build.</h2></div>
+<p class="body-copy">My profile combines research, product, business, communication, technology and AI. The levels are indicative and reflect my real use in projects.</p>
+</div>
+<div class="skills-matrix reveal">
+<article class="skill-group"><h3>Strategy &amp; Research</h3><ul><li>UX Research <span>Advanced</span></li><li>Design Thinking <span>Advanced</span></li><li>Customer Journey <span>Advanced</span></li><li>Service Design <span>Proficient</span></li></ul></article>
+<article class="skill-group"><h3>Product &amp; UX</h3><ul><li>UX / UI Design <span>Advanced</span></li><li>Wireframes and prototypes <span>Advanced</span></li><li>Dashboards <span>Proficient</span></li><li>Data visualization <span>Proficient</span></li></ul></article>
+<article class="skill-group"><h3>Business &amp; CX</h3><ul><li>Customer Experience <span>Advanced</span></li><li>E-commerce <span>Advanced</span></li><li>CRM and processes <span>Proficient</span></li><li>Project management <span>Advanced</span></li></ul></article>
+<article class="skill-group"><h3>Tools</h3><ul><li>Figma <span>Advanced</span></li><li>Miro · FigJam <span>Advanced</span></li><li>Sketch <span>Advanced</span></li><li>Adobe Creative Suite <span>Proficient</span></li><li>WordPress / WooCommerce <span>Advanced</span></li><li>HTML / CSS <span>Proficient</span></li><li>JavaScript <span>Basic</span></li></ul></article>
+<article class="skill-group"><h3>Communication</h3><ul><li>Storytelling <span>Advanced</span></li><li>Content and SEO <span>Proficient</span></li><li>Facilitation <span>Proficient</span></li><li>Cross-functional collaboration <span>Advanced</span></li><li>Social media and newsletters <span>Proficient</span></li></ul></article>
+<article class="skill-group"><h3>AI &amp; Automation</h3><ul><li>AI applied to design <span>Advanced</span></li><li>LLMs and prompting <span>Advanced</span></li><li>AI-assisted prototyping <span>Proficient</span></li><li>Process automation <span>Proficient</span></li></ul></article>
+</div>
+<div class="chips reveal skills-chips"><span class="chip">Figma</span><span class="chip">Sketch</span><span class="chip">Miro</span><span class="chip">FigJam</span><span class="chip">Adobe Creative Suite</span><span class="chip">UX Research</span><span class="chip">Facilitation</span><span class="chip">Journey Mapping</span><span class="chip">Prototyping</span><span class="chip">Design Systems</span><span class="chip">Dashboards</span><span class="chip">HTML &amp; CSS</span><span class="chip">WordPress</span><span class="chip">WooCommerce</span><span class="chip">Content</span><span class="chip">Applied AI</span></div>
+</div>
+</section>
+<section class="contact" id="contacto">
+<div class="wrap contact-grid">
+<div class="reveal"><div class="eyebrow">Contact</div><h2>Let’s talk.</h2><p class="lead">I am looking for a project where I can bring a strategic, practical and people-centred perspective.</p></div>
+<div class="contact-links reveal">
+<a class="contact-link" href="mailto:dangelocinzia@gmail.com"><small>Email</small><strong>dangelocinzia@gmail.com</strong></a>
+<a class="contact-link" href="https://es.linkedin.com/in/cinzia-d-angelo-32091847" rel="noopener" target="_blank"><small>LinkedIn</small><strong>Vincenza D'Angelo</strong></a>
+<div class="contact-link"><small>Location</small><strong>Barcelona</strong></div>
+<div class="contact-link"><small>Availability</small><strong>Part-time or freelance projects · On-site · Hybrid · Remote</strong></div>
+<div class="contact-link contact-wide"><small>Languages</small><strong>Italian · Native  ·  Spanish · Fluent  ·  English · Intermediate  ·  Catalan · Reading and listening comprehension</strong></div></div>
+</div>
+</section>
+<footer class="footer"><div class="wrap footer-inner"><span>© 2026 Vincenza D'Angelo</span><span>UX &amp; Experience Designer</span></div></footer>
+<div aria-label="Enlarged image" aria-modal="true" class="lightbox" role="dialog"><button aria-label="Close" class="lightbox-close">×</button><img alt=""/></div>
+<script>
+const menuBtn=document.querySelector('.menu-button');const links=document.querySelector('.nav-links');
+menuBtn.addEventListener('click',()=>{const open=links.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open)});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const lb=document.querySelector('.lightbox'),lbImg=lb.querySelector('img');
+document.querySelectorAll('.zoom').forEach(btn=>btn.addEventListener('click',()=>{const img=btn.querySelector('img');lbImg.src=img.src;lbImg.alt=img.alt;lb.classList.add('open');document.body.style.overflow='hidden'}));
+function closeLb(){lb.classList.remove('open');document.body.style.overflow='';lbImg.src=''}
+lb.querySelector('.lightbox-close').addEventListener('click',closeLb);lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
